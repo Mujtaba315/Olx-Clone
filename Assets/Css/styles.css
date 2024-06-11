@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 1.372rem;
+    line-height: 1.5495;
+    color: #002f34;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* navbar 1 */
+
+.navbar {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    border-bottom: 0 solid #f2f4f5;
+}
+
+.navbar .navbar-1 {
+    max-width: 1280px;
+    /* transition: max-width .25s ease-in;  */
+    margin: 1.6rem auto .6rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-1 .item {
+    margin-right: 2.8rem;
+    display: flex;
+    height: 2.5rem;
+}
+
+.navbar .navbar-1 .olx-symbol svg {
+    /* width: 5.6rem; */
+    height: 2rem;
+}
+
+.navbar .navbar-1 .category .category-div {
+    column-gap: 0.8rem;
+    color: #002f34;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-1 .category .category-div .category-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(180deg, rgba(0, 47, 52, .16), rgba(0, 47, 52, .01) 81.77%, rgba(0, 47, 52, .01));
+    border-radius: 50%;
+    padding: .5rem;
+}
+
+.navbar .navbar-1 .category .category-div .category-image svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.navbar .navbar-1 .category .category-div .category-span {
+    font-weight: 700;
+    font-size: 0.99rem;
+    height: 1.25rem;
+}
