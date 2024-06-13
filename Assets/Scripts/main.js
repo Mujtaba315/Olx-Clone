@@ -15,3 +15,36 @@ $('.navbar .navbar-2 .location-dropdown .button svg').click(function(){
         $(this).css('rotate', '0deg');
     }
 });
+
+// Day 13 / 6 / 24
+
+// open / close all category menu
+
+$('.category-navbar .categories .category-1 .c1-a').click(function(){
+    $('.category-navbar .categories .category-1 .all-category-menu').toggleClass('open');
+
+    if ( $('.category-navbar .categories .category-1 .all-category-menu').hasClass('open') ){
+        $('.category-navbar .categories .category-1 .c1-a div img').css('rotate', '180deg');
+    } else {
+        $('.category-navbar .categories .category-1 .c1-a div img').css('rotate', '0deg');
+    }
+});
+
+$(document).load($(window).bind("resize", checkPosition));
+function checkPosition()
+{
+    if ($(window).width() < 1080){
+        $('.category-navbar .categories .category-1 .all-category-menu').removeClass('open');
+        $('.category-navbar .categories .category-1 .c1-a div img').css('rotate', '0deg');
+    }
+}
+
+// Slider
+
+$('.autoplay').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    
+  });
