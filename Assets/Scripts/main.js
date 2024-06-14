@@ -49,6 +49,8 @@ $('.autoplay').slick({
 
 });
 
+// Day 14 / 6 / 24
+
 // scroll to top btn
 
 // Get the button
