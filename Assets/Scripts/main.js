@@ -39,6 +39,7 @@ function checkPosition()
     }
 }
 
+
 // Slider
 
 $('.autoplay').slick({

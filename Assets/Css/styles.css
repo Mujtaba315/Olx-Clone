@@ -425,7 +425,7 @@ div.advertise img {
 
 div.all-category {
     max-width: 1280px;
-    margin: 0 auto 1rem;
+    margin: 0 auto 2.5rem;
 }
 
 .all-category .heading-div {
@@ -468,3 +468,266 @@ div.all-category {
 }
 
 /* cards */
+
+div.cards {
+    max-width: 1280px;
+    margin: .5rem auto 4rem;
+}
+
+/* mob cards */
+
+.cards .mob-cards-main {
+    margin-bottom: 1.5rem;
+}
+
+.cards .mob-cards-main .mob-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1.2rem;
+}
+
+.cards .mob-cards-main .mob-heading .heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cards .mob-cards-main .mob-heading .view-more-btn {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cards .mob-cards-main .mob-heading .view-more-btn a {
+    color: #3a77ff;
+    font-size: .9975rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.cards .mob-cards-main .mob-heading .view-more-btn a svg {
+    fill: #3a77ff;
+    margin-left: .625rem;
+}
+
+.cards .mob-cards-main .mob-cards {
+    display: flex;
+    /* column-gap: 1.666rem; */
+    justify-content: space-between;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card {
+    max-width: 18.75rem;
+    border-radius: .4rem;
+    border: .1rem solid rgba(0, 47, 52, .2);
+}
+
+/* .cards .mob-cards-main .mob-cards .mob-card a .image {
+    max-height: 9.6875rem;
+} */
+
+.cards .mob-cards-main .mob-cards .mob-card a .image img {
+    width: 100%;
+    height: auto;
+    /* max-height: 9.6875rem; */
+    border-radius: .4rem .4rem 0 0;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text {
+    padding: 1rem 1rem 1.2rem;
+    color: #002f34;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 10.7rem);
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text .price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text .price .amount {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text .price .heart i {
+    font-size: 1.5rem;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text .detail {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.3125rem;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text .gap {
+    height: 1.2rem;
+    width: 100%;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text .location {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    color: #406367;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text .location .place {
+    font-size: .875rem;
+}
+
+.cards .mob-cards-main .mob-cards .mob-card a .text .location .time {
+    font-size: .75rem;
+}
+
+/* house .cards */
+
+.cards .house-cards-main {
+    margin-bottom: 1.5rem;
+}
+
+.cards .house-cards-main .house-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1.2rem;
+}
+
+.cards .house-cards-main .house-heading .heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cards .house-cards-main .house-heading .view-more-btn {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cards .house-cards-main .house-heading .view-more-btn a {
+    color: #3a77ff;
+    font-size: .9975rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.cards .house-cards-main .house-heading .view-more-btn a svg {
+    fill: #3a77ff;
+    margin-left: .625rem;
+}
+
+.cards .house-cards-main .house-cards {
+    display: flex;
+    /* column-gap: 1.666rem; */
+    justify-content: space-between;
+}
+
+.cards .house-cards-main .house-cards .house-card {
+    max-width: 18.75rem;
+    border-radius: .4rem;
+    border: .1rem solid rgba(0, 47, 52, .2);
+}
+
+/* .cards .house-cards-main .house-cards .house-card a .image {
+    max-height: 9.6875rem;
+} */
+
+.cards .house-cards-main .house-cards .house-card a .image img {
+    width: 100%;
+    height: auto;
+    /* max-height: 9.6875rem; */
+    border-radius: .4rem .4rem 0 0;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text {
+    padding: 1rem 1rem 1.2rem;
+    color: #002f34;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 12.665rem);
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .price .amount {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .price .heart i {
+    font-size: 1.5rem;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .detail {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.3125rem;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .gap {
+    height: 1.2rem;
+    width: 100%;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .location {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    color: #406367;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .location .house-details{
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .location .house-details .items {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .location .house-details .items .item {
+    display: flex;
+    align-items: center;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .location .house-details svg {
+    height: 0.875rem;
+    width: .875rem;
+    fill: #406367;
+    margin-right: .5rem;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .location .place {
+    font-size: .875rem;
+}
+
+.cards .house-cards-main .house-cards .house-card a .text .location .time {
+    font-size: .75rem;
+}
+
+/* Advertise-2*/
+
+div.advertise-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+div.advertise-2 img {
+    max-width: 100%;
+    height: auto;
+}
