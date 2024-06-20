@@ -46,7 +46,8 @@ $('.autoplay').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-
+    prevArrow: false,
+    nextArrow: false
 });
 
 // Day 14 / 6 / 24
