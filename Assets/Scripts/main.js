@@ -76,3 +76,16 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+// open / close footer 1 accordion 
+
+$('div.footer .footer-1-accordion .accordion-item .accordion-title').click(function(){
+    $(this).toggleClass('open');
+    
+    // closing nested 1 accordions
+    
+    if ( ! ($('div.footer .footer-1-accordion .accordion-item .accordion-title.first')).hasClass('open')) {
+        $('div.footer .footer-1-accordion .accordion-item .accordion-text .accordion-title').removeClass('open');
+    }
+});

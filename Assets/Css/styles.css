@@ -849,7 +849,7 @@ div.advertise-3-main {
 /* footer */
 
 div.footer {
-    border-top: 1px solid rgba(0, 47, 52, .2);
+    border-top: .1rem solid rgba(0, 47, 52, .2);
 }
 
 /* footer 1 */
@@ -924,13 +924,89 @@ div.footer .footer-1-accordion {
     display: none;
 }
 
+div.footer .footer-1-accordion .accordion-item {
+    border-bottom: .1rem solid rgba(0, 47, 52, .2);
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-title {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-title .heading {
+    font-size: .9975rem;
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-title .arrow {
+    display: flex;
+    align-items: center;
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-title .arrow svg {
+    height: .9375rem;
+    width: .9375rem;
+    fill: #002f34;
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-text {
+    display: none;
+}
+
+/* nested 1 accordion-item title */
+
+div.footer .footer-1-accordion .accordion-item .accordion-text 
+.accordion-item {
+    border-bottom: none;
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-text 
+.accordion-item .accordion-title {
+    padding-left: 2rem;
+    border-top: .1rem solid rgba(0, 47, 52, .2);
+}
+
+/* end nested 1 accordion-item title */
+
+/* nested 2 accordion-item title */
+
+div.footer .footer-1-accordion .accordion-item .accordion-text 
+.accordion-item .accordion-text 
+.accordion-item .accordion-title {
+    padding-left: 3rem;
+}
+
+/* end nested 2 accordion-item title */
+
+div.footer .footer-1-accordion .accordion-item .accordion-text ul {
+    list-style: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    background-color: #ebeeef;
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-title.open ~ .accordion-text {
+    display: block;
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-title.open .arrow svg {
+    transform: rotate(90deg);
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-text ul li {
+    font-size: .875rem;
+}
+
+div.footer .footer-1-accordion .accordion-item .accordion-text ul li:not(:last-of-type) {
+    margin-bottom: .625rem;
+}
+
 .footer .footer-1-accordion .follow-us {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
     font-size: .9975rem;
-    border-top: 1px solid rgba(0, 47, 52, .2);
 }
 
 .footer .footer-1-accordion .follow-us .account-links {
@@ -954,7 +1030,7 @@ div.footer .footer-1-accordion .download-btns {
     justify-content: center;
     align-items: center;
     column-gap: .5rem;
-    border-top: 1px solid rgba(0, 47, 52, .2);
+    border-top: .18rem solid rgba(0, 47, 52, .2);
 }
 
 div.footer .footer-1-accordion .download-btns a {
@@ -990,6 +1066,12 @@ div.footer .footer-2 {
 
 
 @media screen and (max-width: 1379px) {
+
+    /* for scroll to top btn */
+
+    button.to-top-btn {
+        display: none !important;
+    }
 
     /* For abdvertise 3 */
 
