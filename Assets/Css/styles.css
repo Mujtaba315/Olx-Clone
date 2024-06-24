@@ -1225,6 +1225,16 @@ div.footer .footer-2 {
         margin: 0 2% 2.5rem;
     }
 
+    .all-category .items {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .all-category .items a {
+        flex: 0 0 auto;
+    }
+
     /* for cards */
 
     div.cards {
