@@ -1229,6 +1229,7 @@ div.footer .footer-2 {
         flex-wrap: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
+        column-gap: 1rem;
     }
 
     .all-category .items a {
