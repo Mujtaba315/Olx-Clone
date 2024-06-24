@@ -1,1 +1,0 @@
-1) Set card image container height to 155px
