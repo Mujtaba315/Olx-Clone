@@ -345,6 +345,131 @@ button {
     margin-left: .5rem;
 }
 
+/* navbar res dropdown */
+
+div.navbar-res-dropdown {
+    position: fixed;
+    width: 100%;
+    top: 2.8125rem;
+    background-color: #fff;
+    z-index: 16;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
+div.navbar-res-dropdown.open {
+    height: calc(100% - 2.8125rem);
+    visibility: visible;
+    opacity: 1;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+body:has(div.navbar-res-dropdown.open) {
+    overflow-y: hidden;
+}
+
+.navbar-res-dropdown .account {
+    display: flex;
+    padding: 1rem;
+    border-bottom: .07rem solid #ced6d7;
+}
+
+.navbar-res-dropdown .account .account-img {
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+.navbar-res-dropdown .account .account-img img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-res-dropdown .account .account-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    font-size: .875rem;
+}
+
+.navbar-res-dropdown .account .account-detail span:last-of-type {
+    text-decoration: underline;
+    padding-top: .188rem; 
+    cursor: pointer;   
+}
+
+.navbar-res-dropdown .items,
+.navbar-res-dropdown .help {
+    border-bottom: .07rem solid #ced6d7;
+}
+
+.navbar-res-dropdown .items a .item,
+.navbar-res-dropdown .help a .help-item {
+    display: flex;
+    min-height: 2.8125rem;
+    align-items: center;
+    font-size: .9975rem;
+    color: #002f34;
+}
+
+.navbar-res-dropdown .items a .item:hover,
+.navbar-res-dropdown .help a .help-item:hover {
+    background-color: #c8f8f6;
+}
+
+.navbar-res-dropdown .items a .item .image,
+.navbar-res-dropdown .help a .help-item .image {
+    max-width: 1.4375rem;
+    max-height: 1.4375rem;
+    margin: 0 1rem;
+}
+
+.navbar-res-dropdown .items a .item .image svg,
+.navbar-res-dropdown .items a .item .image img,
+.navbar-res-dropdown .help a .help-item .image img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-res-dropdown .btns .login-btn {
+    padding: 1rem .5rem;
+}
+
+.navbar-res-dropdown .btns .create-acc {
+    padding: 0 .5rem .5rem;
+}
+
+.navbar-res-dropdown .btns div button {
+    background: none;
+    border: none;
+    border-radius: .25rem;
+    height: 3rem;
+    width: 100%;
+    font-size: .9975rem;
+    font-weight: 700;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.navbar-res-dropdown .btns .login-btn button {
+    background-color: #002f34;
+    color: #fff;
+}
+
+.navbar-res-dropdown .btns .create-acc button {
+    background-color: #fff;
+    color: #002f34;
+    border: .125rem solid #002f34;
+}
+
+.navbar-res-dropdown .btns .create-acc button:hover {
+    border: .25rem solid #002f34
+}
+
+/* header */
+
 header.header-res {
     padding: 1rem;
     position: sticky;
@@ -381,6 +506,50 @@ header.header-res {
 .header-res .search-bar .wrapper .search-input::placeholder {
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* header sell btn */
+
+.sell-btn-res {
+    position: fixed;
+    bottom: -5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s ease-in-out;
+}
+
+.sell-btn-res button {
+    border: none;
+    background: none;
+    padding: 0;
+    position: relative;
+}
+
+.sell-btn-res button .sell-btn-res-border{
+    width: 6.5rem;
+    height: 3rem;
+}
+
+.sell-btn-res button div {
+    position: absolute;
+    top: 0;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .25rem;
+}
+
+.sell-btn-res button div img {
+    height: 1rem;
+}
+
+.sell-btn-res button div span {
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: Roboto, Helvetica, sans-serif;
+    color: rgb(0, 47, 52);
 }
 
 /* scroll to top button */
@@ -942,6 +1111,8 @@ div.advertise-3-main {
 
 div.footer {
     border-top: .1rem solid rgba(0, 47, 52, .2);
+    z-index: 2;
+    position: relative;
 }
 
 /* footer 1 */
@@ -1197,6 +1368,12 @@ div.footer .footer-2 {
 
     header.header-res {
         display: block;
+    }
+
+    /* for sell btn res */
+
+    .sell-btn-res {
+        bottom: 1rem;
     }
     
     /* for category navbar */
