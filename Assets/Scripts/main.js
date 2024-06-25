@@ -109,6 +109,14 @@ $(window).on('scroll', function () {
     }
 }); 
 
+// $(document).load($(window).bind("resize", checkPosition));
+// function checkPosition()
+// {
+//     if ($(window).width() < 769){
+//         $('div.sell-btn-res-js');
+//     }
+// }
+
 // navbar res dropdown 
 
 $('nav.navbar .navbar-1 .item.hamburger').click(function(){
@@ -124,3 +132,32 @@ function checkPosition()
         $('div.navbar-res-dropdown').removeClass('open');
     }
 }
+
+// login popup 
+
+$('.navbar-res-dropdown .account .account-detail .login-btn-js').click(function(){
+    $('div.navbar-res-dropdown').removeClass('open');
+    $('div.login-popup-js').toggleClass('open');
+});
+
+$('.login-popup-js .content-main .cross-js button').click(function(){
+    $('div.login-popup-js').removeClass('open');
+});
+
+
+// signup popup 
+
+$('.login-popup-js .content-main .content .create-acc-js button').click(function(){
+    $('div.login-popup-js').removeClass('open');
+    $('div.signup-popup-js').addClass('open');
+});
+
+$('.signup-popup-js .content-main .cross-js button').click(function(){
+    $('div.signup-popup-js').removeClass('open');
+});
+
+$('.signup-popup-js .content-main .content .create-acc-js button').click(function(){
+    $('div.signup-popup-js').removeClass('open');
+    $('div.login-popup-js').addClass('open');
+});
+

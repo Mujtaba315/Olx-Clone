@@ -552,6 +552,170 @@ header.header-res {
     color: rgb(0, 47, 52);
 }
 
+/* popups */
+
+/* login / signup popup */
+
+div.popup-bg {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 15;
+}
+
+div.login-popup,
+div.signup-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+div.login-popup.open,
+div.signup-popup.open {
+    display: flex;
+}
+
+body:has(div.login-popup.open),
+body:has(div.signup-popup.open) {
+    overflow: hidden;
+}
+
+.login-popup .content-main,
+.signup-popup .content-main {
+    background-color: #fff;
+    width: 25rem;
+    border-radius: .25rem;
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
+.login-popup .content-main button,
+.signup-popup .content-main button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.login-popup .content-main .cross,
+.signup-popup .content-main .cross {
+    text-align: end;
+    position: fixed;
+    width: 25rem;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: .25rem;
+}
+
+.login-popup .content-main .cross button,
+.signup-popup .content-main .cross button {
+    padding: 1rem 1rem 0;
+}
+
+.login-popup .content-main .content,
+.signup-popup .content-main .content {
+    padding: 1rem 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.login-popup .content-main .content .logo,
+.signup-popup .content-main .content .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.login-popup .content-main .content .logo img,
+.signup-popup .content-main .content .logo img {
+    max-width: 4.7rem;
+    max-height: 2.5rem;
+    margin-bottom: 1rem;
+} 
+
+.login-popup .content-main .content .logo span,
+.signup-popup .content-main .content .logo span {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.login-popup .content-main .content .btns,
+.signup-popup .content-main .content .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-popup .content-main .content .btns button,
+.signup-popup .content-main .content .btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 100%;
+    border: .125rem solid #002f34;
+    border-radius: .25rem;
+}
+
+.login-popup .content-main .content .btns button:not(:last-of-type),
+.signup-popup .content-main .content .btns button:not(:last-of-type) {
+    margin-bottom: .5rem;
+}
+
+.login-popup .content-main .content .btns .or-span,
+.signup-popup .content-main .content .btns .or-span {
+    font-size: .875rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-popup .content-main .content .btns button img,
+.login-popup .content-main .content .btns button svg,
+.signup-popup .content-main .content .btns button img,
+.signup-popup .content-main .content .btns button svg {
+    margin-right: .5rem;
+}
+
+.login-popup .content-main .content .btns button span,
+.signup-popup .content-main .content .btns button span {
+    font-size: .9975rem;
+    font-weight: 700;
+}
+
+.login-popup .content-main .content .create-acc,
+.signup-popup .content-main .content .create-acc {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-popup .content-main .content .create-acc button,
+.signup-popup .content-main .content .create-acc button {
+    color: #3a77ff;
+    font-weight: 700;
+    padding: 0.06rem .375rem 1rem;
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.signup-popup .content-main .content .pri-pol {
+    margin-top: 1rem;
+    font-size: .875rem;
+    text-align: center;
+    color: #23262A;
+}
+
+.signup-popup .content-main .content .pri-pol span a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 /* scroll to top button */
 
 button.to-top-btn {
@@ -1457,3 +1621,30 @@ div.footer .footer-2 {
        text-align: center;
     }
 } 
+
+
+/* for login / signup popup */
+
+@media screen and (max-width: 949px) {
+    .login-popup .content-main,
+    .signup-popup .content-main {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100%;
+        border-radius: 0;
+    }
+
+    .login-popup .content-main .cross,
+    .signup-popup .content-main .cross {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* for navbar 1 */
+
+@media screen and (max-width: 341px) {
+    .navbar .navbar-1 .item {
+        margin-right: .8rem;
+    }
+}
