@@ -110,10 +110,11 @@ $(window).on('scroll', function () {
 }); 
 
 // $(document).load($(window).bind("resize", checkPosition));
-// function checkPosition()
-// {
+// function checkPosition() {
 //     if ($(window).width() < 769){
-//         $('div.sell-btn-res-js');
+//         $('div.sell-btn-res-js button .sell-btn-res-border').attr('src', 'https://www.olx.com.pk/assets/iconSellBorder_noinline.d9eebe038fbfae9f90fd61d971037e02.svg');
+//     } else {
+//         $('div.sell-btn-res-js button .sell-btn-res-border').attr('src', 'Assets/Images/sell_btn_res_border.svg');
 //     }
 // }
 

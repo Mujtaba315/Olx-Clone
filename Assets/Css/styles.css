@@ -516,6 +516,7 @@ header.header-res {
     margin-left: 50%;
     transform: translateX(-50%);
     transition: all .3s ease-in-out;
+    display: none;
 }
 
 .sell-btn-res button {
@@ -1538,7 +1539,9 @@ div.footer .footer-2 {
 
     .sell-btn-res {
         bottom: 1rem;
+        display: block;
     }
+
     
     /* for category navbar */
 
@@ -1623,9 +1626,12 @@ div.footer .footer-2 {
 } 
 
 
-/* for login / signup popup */
+
 
 @media screen and (max-width: 949px) {
+
+    /* for login / signup popup */
+
     .login-popup .content-main,
     .signup-popup .content-main {
         width: 100vw;
@@ -1639,12 +1645,53 @@ div.footer .footer-2 {
         width: 100%;
         border-radius: 0;
     }
+
+    /* res sell btn */
+
+    .sell-btn-res button {
+        background: #fff;
+        border-radius: 2rem;
+        height: 2.5rem;
+        width: 5.6rem;
+    }
+
+    .sell-btn-res button .sell-btn-res-border{
+        width: auto;
+        height: 2.5rem;
+    }
+
+    .sell-btn-res button div {
+        height: 2.5rem;
+    }
 }
 
 /* for navbar 1 */
 
-@media screen and (max-width: 341px) {
+@media screen and (max-width: 390px) {
     .navbar .navbar-1 .item {
-        margin-right: .8rem;
+        margin-right: .7rem;
+    }
+
+    .navbar .navbar-1 .item.hamburger i {
+        font-size: 1rem;
+    }
+
+    .navbar .navbar-1 .olx-symbol svg {
+        height: 1.5rem;
+    }
+
+    .navbar .navbar-1 .category .category-div {
+        column-gap: .3rem;
+    }
+
+    .navbar .navbar-1 .category .category-div .category-image {
+        height: 2rem;
+        width: 2rem;
+        padding: .35rem;
+    }
+
+    .navbar .navbar-1 .category .category-div .category-image svg {
+        height: 1.3rem;
+        width: 1.3rem;
     }
 }
