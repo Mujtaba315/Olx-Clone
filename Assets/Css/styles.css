@@ -1639,6 +1639,10 @@ div.footer .footer-2 {
 
     /* for login / signup popup */
 
+    div.login-popup, div.signup-popup {
+        transition: none;
+    }
+
     .login-popup .content-main,
     .signup-popup .content-main {
         width: 100vw;
