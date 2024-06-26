@@ -571,12 +571,19 @@ div.signup-popup {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    /* display: none; */
+    /* transform: scale(0); */
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
 
 div.login-popup.open,
 div.signup-popup.open {
-    display: flex;
+    /* display: flex; */
+    /* transform: scale(1); */
+    opacity: 1;
+    visibility: visible;
 }
 
 body:has(div.login-popup.open),
